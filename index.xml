@@ -102,18 +102,25 @@ res3: f: Int =&amp;gt; Int = &amp;lt;function1&amp;gt;
       <guid>http://ooxxooxx.github.io/scala/</guid>
       <description>
 
-&lt;h2 id=&#34;scala初探:1204e6e7d382e6899bda98d07e3dc5df&#34;&gt;Scala初探&lt;/h2&gt;
+&lt;p&gt;General purpose language; multiparadigm (object-oriented, functional, concurrent elements); statically typed, type-safe; focus: Web services. Successor of &amp;hellip;&lt;/p&gt;
+
+&lt;h1 id=&#34;scala初探:1204e6e7d382e6899bda98d07e3dc5df&#34;&gt;Scala初探&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://github.com/spf13/cobra&#34;&gt;匿名函数&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://xiao10hou.com/blog/2016/03/15/匿名函数/&#34;&gt;匿名函数&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;setup:1204e6e7d382e6899bda98d07e3dc5df&#34;&gt;Setup&lt;/h2&gt;
+&lt;h1 id=&#34;scala传送门:1204e6e7d382e6899bda98d07e3dc5df&#34;&gt;Scala传送门&lt;/h1&gt;
 
-&lt;p&gt;Thanks for reading!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.scala-lang.org/api/current/&#34;&gt;Scala API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.scala-lang.org/&#34;&gt;Scala Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.github.io/scala_school/&#34;&gt;Scala School&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://twitter.github.io/effectivescala/&#34;&gt;Effective Scala&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lauris/awesome-scala&#34;&gt;Awesome Scala&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;thanks-for-reading:1204e6e7d382e6899bda98d07e3dc5df&#34;&gt;Thanks for reading!&lt;/h2&gt;
 </description>
     </item>
     

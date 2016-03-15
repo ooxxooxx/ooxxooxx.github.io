@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scala on 月极南寒</title>
+    <link>http://ooxxooxx.github.io/tags/scala/</link>
+    <description>Recent content in Scala on 月极南寒</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://ooxxooxx.github.io/tags/scala/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>匿名函数</title>
+      <link>http://ooxxooxx.github.io/blog/2016/03/15/%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://ooxxooxx.github.io/blog/2016/03/15/%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0/</guid>
+      <description>
+
+&lt;ul&gt;
+&lt;li&gt;匿名函数(Anonymous Functions)&lt;/li&gt;
+&lt;li&gt;函数字面量(Function Literal)&lt;/li&gt;
+&lt;li&gt;lambda表达式（Lambda Expressions）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;匿名函数:8c5b74ab4cb6adf55481329c9f2a375f&#34;&gt;匿名函数&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Scala的匿名函数,形如：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;scala&amp;gt; (x:Int) =&amp;gt; x+1
+res1: Int =&amp;gt; Unit = &amp;lt;function1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其中 =&amp;gt; 左边是字面量的参数列表，=&amp;gt;右边是函数体。&lt;/p&gt;
+
+&lt;p&gt;匿名函数是有类型的,上式类型为： Int =&amp;gt; Int&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;匿名函数可以包含多行表达式，要用｛｝括起来&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;scala&amp;gt; (x:Int) =&amp;gt; { println(x)
+     | println(x + 1)
+     | }
+res2: Int =&amp;gt; Int = &amp;lt;function1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;匿名函数可以赋给一个val变量&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;scala&amp;gt; val f =(x:Int) =&amp;gt; x+1
+f: Int =&amp;gt; Int = &amp;lt;function1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;匿名函数可以作为参数传递&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;scala&amp;gt; def foo(func : Int =&amp;gt; Unit){ func(0) }
+res3: f: Int =&amp;gt; Int = &amp;lt;function1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这里，foo的参数func的类型是Int =&amp;gt; Unit,即参数为一个Int类型，返回值为Unit类型的函数。
+另外还有，单参数、多参数、无参数三种类型&lt;/p&gt;
+
+&lt;p&gt;参考：&lt;a href=&#34;http://docs.scala-lang.org/tutorials/tour/anonymous-function-syntax.html&#34;&gt;Anonymous Function Syntax&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;Int =&amp;gt; Int
+(Int, Int) =&amp;gt; String
+() =&amp;gt; String
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;匿名函数实现&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;匿名函数会被Scala编译器编译成内部类的形式，可以参考&lt;a href=&#34;http://blog.csdn.net/zhangjg_blog/article/details/22903473&#34;&gt;函数字面量是如何实现的&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;关于函数字面量和lambda表达式:8c5b74ab4cb6adf55481329c9f2a375f&#34;&gt;关于函数字面量和lambda表达式&lt;/h2&gt;
+
+&lt;p&gt;一些文章中，会出现函数字面量和lambda表达式。&lt;br /&gt;
+  个人认为，这两个概念与匿名函数说的是同一个语义概念。&lt;br /&gt;
+  因为在Scala的文档中，只出现了匿名函数,并且参考了一些文章，也都没有特别指明函数字面量或lambda表达式有什么特殊的地方。暂且这样理解，概念上就不深究了。&lt;/p&gt;
+
+&lt;p&gt;可以参考：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.github.io/scala_school/basics.html&#34;&gt;Scala School中对匿名函数的介绍&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.github.io/scala_school/basics.html&#34;&gt;Scala 文档中对匿名函数语法的介绍&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
